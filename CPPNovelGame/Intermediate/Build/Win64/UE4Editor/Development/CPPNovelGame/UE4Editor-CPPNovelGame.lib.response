@@ -1,0 +1,15 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-CPPNovelGame.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"E:\GitHub Projects Folder\CPPNovelGame\CPPNovelGame\Intermediate\Build\Win64\CPPNovelGameEditor\Development\Engine\SharedPCH.Engine.h.obj"
+"E:\GitHub Projects Folder\CPPNovelGame\CPPNovelGame\Intermediate\Build\Win64\UE4Editor\Development\CPPNovelGame\CPPNovelGame.cpp.obj"
+"E:\GitHub Projects Folder\CPPNovelGame\CPPNovelGame\Intermediate\Build\Win64\UE4Editor\Development\CPPNovelGame\CPPNovelGameGameModeBase.cpp.obj"
+"E:\GitHub Projects Folder\CPPNovelGame\CPPNovelGame\Intermediate\Build\Win64\UE4Editor\Development\CPPNovelGame\CPPNovelGame.init.gen.cpp.obj"
+"E:\GitHub Projects Folder\CPPNovelGame\CPPNovelGame\Intermediate\Build\Win64\UE4Editor\Development\CPPNovelGame\CPPNovelGameGameModeBase.gen.cpp.obj"
+"E:\GitHub Projects Folder\CPPNovelGame\CPPNovelGame\Intermediate\Build\Win64\UE4Editor\Development\CPPNovelGame\PCLaunch.rc.res"
+/OUT:"E:\GitHub Projects Folder\CPPNovelGame\CPPNovelGame\Intermediate\Build\Win64\UE4Editor\Development\CPPNovelGame\UE4Editor-CPPNovelGame.lib"
