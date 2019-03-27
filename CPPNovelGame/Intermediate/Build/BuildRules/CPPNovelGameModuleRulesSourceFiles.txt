@@ -1,3 +1,0 @@
-E:\GitHub Projects Folder\CPPNovelGame\CPPNovelGame\Source\CPPNovelGame\CPPNovelGame.Build.cs
-E:\GitHub Projects Folder\CPPNovelGame\CPPNovelGame\Source\CPPNovelGame.Target.cs
-E:\GitHub Projects Folder\CPPNovelGame\CPPNovelGame\Source\CPPNovelGameEditor.Target.cs
