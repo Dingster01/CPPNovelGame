@@ -120,6 +120,13 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 
 
 
+
+
+
+
+
+
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">if (window.hasOwnProperty("storyFormat")) 
 {
 	// Change this to the path where the HTML file is
@@ -132,13 +139,20 @@ else
 }
 setup.SoundPath = setup.Path;
 
+
+
+
+
+
+
+
 </script><tw-passagedata pid="1" name="Start" tags="" position="702,201" size="100,100">This is Stacy Rezeam with a GNTV (Global News Television) Special News Report. It has been a month since Earth experienced what many scientists had initially thought was a normal meteor shower but turned out to be mysterious boxes falling from space. Containing a message to come to Uranus, along with blueprints on how to build a spaceship for travelling into deep space, the mysterious senders of the boxes have started a race to Uranus! The total amount of these “space boxes” that have crash-landed on Earth is still unknown, but from what we currently know, 3 boxes have been sighted. With two in this country, the other is on the opposite side of the world in a country that is considered one of our enemies: The Roosktain Nation. There are currently no signs of rocket launches happening this month from these box recipients, so only time will tell what happens next.
 [[Head To Investors Meeting]]</tw-passagedata><tw-passagedata pid="2" name="Head To Investors Meeting" tags="" position="703,349" size="100,100">@@color:yellow;Investor1@@: You’ve spent so much on this ship already, yet we don’t see any progress. Why should we invest more than what we already have?
 @@color:red;Brock@@: We promise you that we are on our way to finishing this ship. It’s just these materials are very rare and expensive, so we need more of your funding.
 @@color:yellow;Investor2@@: I don’t know if these aliens or whatever know who they were sending these boxes to but if they did, I believe they made a mistake. I’m pulling my money out. I’ll be investing it in a more reliable Uranus ship program: Meelon Dusk’s Team X. 
 
 [[Leave meeting-&gt;Continue]]
-&lt;&lt;set $moneyUpdate to 0&gt;&gt;</tw-passagedata><tw-passagedata pid="3" name="Continue" tags="" position="703,499" size="100,100">Brock: Well, that didn’t go so well. Don’t worry, once we find a huge investor, we’ll be able to build our ship. [[Think of options-&gt;Options]]</tw-passagedata><tw-passagedata pid="4" name="Options" tags="" position="704,651" size="100,100">#[[Find more investors and sponsors]]
+&lt;&lt;set $moneyUpdate to 0&gt;&gt;</tw-passagedata><tw-passagedata pid="3" name="Continue" tags="" position="703,499" size="100,100">@@color:red;Brock@@: Well, that didn’t go so well. Don’t worry, once we find a huge investor, we’ll be able to build our ship. [[Think of options-&gt;Options]]</tw-passagedata><tw-passagedata pid="4" name="Options" tags="" position="704,652" size="100,100">#[[Find more investors and sponsors]]
 #[[Hit the casinos]]
 #[[Invest in Cat Food Stocks]]</tw-passagedata><tw-passagedata pid="5" name="Find more investors and sponsors" tags="" position="450,795" size="200,100">You decide to go find more investors and sponsors for your ship.
 &lt;&lt;set $moneyUpdate to 500000&gt;&gt;
@@ -168,6 +182,7 @@ Announcer: There you have it folks! The race to Uranus now even has a reward! Du
 
 [[Continue-&gt;Team Exictement]]</tw-passagedata><tw-passagedata pid="12" name="Team Exictement" tags="" position="699,1267" size="100,100">Brock: Whoa, this is amazing! If we can build our ship and get there before anyone else, we can get the reward money! I’m feeling really optimistic! I’m going to figure out some other ways to get more funding and see what I can do about getting a new lead engineer.
 You: (I should probably say something to everyone)
+
 &lt;div id=&quot;user-choices&quot;&gt;
 \&lt;&lt;link &quot;We’ll build this ship and be the first to Uranus!&quot;&gt;&gt;
 	&lt;&lt;replace &quot;#user-choices&quot;&gt;&gt;Brock: That’s the Spirit! We can do this
@@ -205,26 +220,1416 @@ Investor: Excellent.
 
 The investor leaves the room leaving you and Brock [[alone]]
 
-</tw-passagedata><tw-passagedata pid="14" name="alone" tags="" position="902,1501" size="100,100">Brock: What do you think about adding another crew member on the ship? Having a botanist can’t harm the voyage? Can it?
+</tw-passagedata><tw-passagedata pid="14" name="alone" tags="" position="700,1537" size="100,100">Brock: What do you think about adding another crew member on the ship? Having a botanist can’t harm the voyage? Can it?
 &lt;&lt;set $allowAct2 to false&gt;&gt;\
 &lt;div id=&quot;user-choices&quot;&gt;
 \&lt;&lt;link &quot;No, sounds promising&quot;&gt;&gt;
 	&lt;&lt;replace &quot;#user-choices&quot;&gt;&gt;Brock: Yeah, I agree! 
 	
-	[[End Act 1-&gt;Start Act 2]]&lt;&lt;/replace&gt;&gt;
+	[[2 weeks later]]&lt;&lt;/replace&gt;&gt;
 &lt;&lt;/link&gt;&gt;
 &lt;&lt;link &quot;Maybe, let the legal team handle it first.&quot;&gt;&gt;
 	&lt;&lt;replace &quot;#user-choices&quot;&gt;&gt;Brock: I like the idea! Hope it works out.
 	
-	[[End Act 1-&gt;Start Act 2]]&lt;&lt;/replace&gt;&gt;
+	[[2 weeks later]]&lt;&lt;/replace&gt;&gt;
 &lt;&lt;/link&gt;&gt;
 &lt;&lt;link &quot;Yes, but he said he’ll sponsor the ship, so I’ll agree to his offer.&quot;&gt;&gt;
 	&lt;&lt;replace &quot;#user-choices&quot;&gt;&gt;Brock: Looks like accepting the offer is the only choice we got. Let’s make the best of it, bro!
 	
-	[[End Act 1-&gt;Start Act 2]]&lt;&lt;/replace&gt;&gt;
+	[[2 weeks later]]&lt;&lt;/replace&gt;&gt;
 &lt;&lt;/link&gt;&gt;
 \&lt;/div&gt;
-	</tw-passagedata><tw-passagedata pid="15" name="Start Act 2" tags="" position="1602,1" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata></div>
+	</tw-passagedata><tw-passagedata pid="15" name="Start Act 2" tags="" position="1632,0" size="100,100">* After a couple of weeks, the spaceship is finally finished. The crew launches the spaceship to space, trying to be the 1st spaceship to reach Uranus. As their spaceship reaches to the atmosphere, the crew sees there are tons of spaceships in front of them in space, realizing that they are currently last place of the space race. *
+
+* Alarm begins beeping * 
+ 
+MC: AL, what is that alarm for? 
+ 
+AL: Captain, the ships scanners indicate that we are approaching the other ships. 
+ 
+Broc: Both of them? 
+ 
+AL: Yes, it appears so; we will soon be close enough to get a visual. 
+ 
+MC: Let’s slow our speed, I don’t want them to know we’ve caught up to them yet. 
+ 
+Broc: Let’s open the viewing platform for the control room so we can see what’s going on. 
+ 
+* A couple minutes later, the ships come into view * 
+ 
+Rylux: They are battling! The Roosktain Nation must be trying to ensure no other teams will be able to interfere with their plans. 
+ 
+Marilyn: They might attack us too! Maybe we should divert our course to avoid them. We don’t have any defenses or weapons! 
+ 
+Rylux: We have a weapons system! 
+ 
+Broc: Wait, what weapons system? I don’t remember anything in the plans about this! 
+ 
+Rylux: I added it to the plans for the ship. I expected my country would be developing weapons, so I made sure we would be prepared to face them! 
+
+&lt;div id=&quot;user-choices&quot;&gt;
+\&lt;&lt;link &quot;Were you planning to fight this whole time? &quot;&gt;&gt;
+	&lt;&lt;replace &quot;#user-choices&quot;&gt;&gt;
+MC: Were you planning to fight this whole time?
+	
+Rylux: We needed to be safe! Both of the other teams have weapons on their ships! 
+ 
+Bro: It doesn’t matter now, we need to decide what we’re going to do! 
+ 
+Rylux: We need to attack now! With two teams against the Roosktain Nation, we have the best chance to defeat them and save both worlds! 
+ 
+Marilyn: Are you crazy? This was supposed to be a research expedition! We don’t know how to fight! 
+ 
+Rylux: If we don’t fight now, they will find us later and we will be alone! 
+ 
+Marilyn: This is too dangerous! We’re going to die! 
+ 
+Bro: Hey! Stop! We need to stay. AL, can you give us any information about our possible outcomes? 
+ 
+AL: AL is sorry, without information on the other ships’ weapon systems, AL is not able to run accurate simulations. 
+ 
+Bro: The choice is up to you Captain. What should we do, continue on our mission or stay and fight?
+	
+	[[We’ll fight them now!]]
+	[[We should reroute our course and try to get past them.]]
+	&lt;&lt;/replace&gt;&gt;
+	&lt;&lt;/link&gt;&gt;
+
+&lt;&lt;link &quot;How did you sneak this past surveillance?&quot;&gt;&gt;
+	&lt;&lt;replace &quot;#user-choices&quot;&gt;&gt;
+MC: How did you sneak this past surveillance?
+
+Rylux: We needed to be safe! Both of the other teams have weapons on their ships! 
+ 
+Bro: It doesn’t matter now, we need to decide what we’re going to do! 
+ 
+Rylux: We need to attack now! With two teams against the Roosktain Nation, we have the best chance to defeat them and save both worlds! 
+ 
+Marilyn: Are you crazy? This was supposed to be a research expedition! We don’t know how to fight! 
+ 
+Rylux: If we don’t fight now, they will find us later and we will be alone! 
+ 
+Marilyn: This is too dangerous! We’re going to die! 
+ 
+Bro: Hey! Stop! We need to stay. AL, can you give us any information about our possible outcomes? 
+ 
+AL: AL is sorry, without information on the other ships’ weapon systems, AL is not able to run accurate simulations. 
+ 
+Bro: The choice is up to you Captain. What should we do, continue on our mission or stay and fight?
+	
+	[[We’ll fight them now!]]
+	[[We should reroute our course and try to get past them.]]
+	&lt;&lt;/replace&gt;&gt;
+	
+&lt;&lt;/link&gt;&gt;
+
+
+&lt;&lt;link &quot;Does the weapons system work?&quot;&gt;&gt;
+	&lt;&lt;replace &quot;#user-choices&quot;&gt;&gt;
+MC: Does the weapons system work?
+
+Rylux: We needed to be safe! Both of the other teams have weapons on their ships! 
+ 
+Bro: It doesn’t matter now, we need to decide what we’re going to do! 
+ 
+Rylux: We need to attack now! With two teams against the Roosktain Nation, we have the best chance to defeat them and save both worlds! 
+ 
+Marilyn: Are you crazy? This was supposed to be a research expedition! We don’t know how to fight! 
+ 
+Rylux: If we don’t fight now, they will find us later and we will be alone! 
+ 
+Marilyn: This is too dangerous! We’re going to die! 
+ 
+Bro: Hey! Stop! We need to stay. AL, can you give us any information about our possible outcomes? 
+ 
+AL: AL is sorry, without information on the other ships’ weapon systems, AL is not able to run accurate simulations. 
+ 
+Bro: The choice is up to you Captain. What should we do, continue on our mission or stay and fight?
+	
+	[[We’ll fight them now!]]
+	[[We should reroute our course and try to get past them.]]
+	&lt;&lt;/replace&gt;&gt;
+	&lt;&lt;/link&gt;&gt;
+	
+&lt;&lt;link &quot;This is crazy!&quot;&gt;&gt;
+	&lt;&lt;replace &quot;#user-choices&quot;&gt;&gt;
+MC: This is crazy!
+
+Rylux: We needed to be safe! Both of the other teams have weapons on their ships! 
+ 
+Bro: It doesn’t matter now, we need to decide what we’re going to do! 
+ 
+Rylux: We need to attack now! With two teams against the Roosktain Nation, we have the best chance to defeat them and save both worlds! 
+ 
+Marilyn: Are you crazy? This was supposed to be a research expedition! We don’t know how to fight! 
+ 
+Rylux: If we don’t fight now, they will find us later and we will be alone! 
+ 
+Marilyn: This is too dangerous! We’re going to die! 
+ 
+Bro: Hey! Stop! We need to stay. AL, can you give us any information about our possible outcomes? 
+ 
+AL: AL is sorry, without information on the other ships’ weapon systems, AL is not able to run accurate simulations. 
+ 
+Bro: The choice is up to you Captain. What should we do, continue on our mission or stay and fight?
+
+	[[We’ll fight them now!]]
+	[[We should reroute our course and try to get past them.]]
+	&lt;&lt;/replace&gt;&gt;
+	&lt;&lt;/link&gt;&gt;
+
+\\&lt;/div&gt;</tw-passagedata><tw-passagedata pid="16" name="We’ll fight them now!" tags="" position="1557,150" size="100,100">MC: Rylux, you’re in charge of your weapon system. We are only attacking the Roosktain ship; we don’t want both teams to be against us. AL, you’re programming includes knowledge of the ships steering and acceleration controls. Steer us into the battle, but try to keep us out of their fire. Brock, help Marilyn calm down. I’ll monitor the ships systems to oversee energy usage and damage. 
+ 
+* Brock leads Marilyn to the back of the control room, Rylux grins as everyone else hurries into position to enter the battle. The ship moves closer to the other teams and begins to fire on the Roosktain ship. There seems to be a small explosion before the ship begins to turn towards them and open fire. * 
+
+&lt;&lt;if $moneyUpdate is 500000&gt;&gt;
+	* There is sudden, harsh turbulence as the ship comes under fire from the Roosktains. Because the MC tried to find more investors and sponsors for building this ship, the extra money the team acquired is able to withstand some damage from the enemy attack. * 
+
+&lt;&lt;elseif $moneyUpdate is 1000000&gt;&gt;
+	* There is sudden, harsh turbulence as the ship comes under fire from the Roosktains. Because the MC went to the casino and won a lot of money, the ship is barely scratched thanks to the highly expensive shield. * 
+
+&lt;&lt;elseif $moneyUpdate is 125000&gt;&gt;
+	* There is sudden, harsh turbulence as the ship comes under fire from the Roosktains. Because the MC went to the casino and didn&#39;t win a lot of money, the ship is quite damaged. *
+
+&lt;&lt;elseif $moneyUpdate is 25000&gt;&gt;
+	* There is sudden, harsh turbulence as the ship comes under fire from the Roosktains. Because the MC decided to invest in cat food stock, the funding is not enough to provide enough protection. Therefore, the ship suffers severe damage.*
+
+
+&lt;&lt;/if&gt;&gt;
+
+MC: We have damage to one to the engines. AL, we need to get away from here, now!  
+ 
+AL: Affirmative, engaging in evasive maneuvers. 
+ 
+* The ship is able to escape without sustaining any more significant damage. The other teams resume battle and our ship is able to escape. * 
+ 
+Marilyn: Oh my gosh! I can’t believe we’re still alive! 
+ 
+Rylux: (pale) We must hurry away from here. If the Roosktain ship finds us, we can not face them alone. 
+ 
+Bro: First we need to stop and assess the damage. The battle should keep them away from us for a while. AL, are scanners showing anywhere nearby that we can land to assess damage.  
+ 
+AL: There is a nearby astrological body that we can land on. I will input the coordinates now. 
+
+&lt;&lt;if $moneyUpdate &gt;= 500000&gt;&gt;
+[[Land on astrological body-&gt;Twilight Zone Scenario 2]]
+
+&lt;&lt;else&gt;&gt;
+[[Land on astrological body-&gt;Twilight Zone Scenario 1]]
+&lt;&lt;/if&gt;&gt;
+
+</tw-passagedata><tw-passagedata pid="17" name="We should reroute our course and try to get past them." tags="" position="1707,150" size="100,100">MC: They seem to be matching themselves pretty evenly. This is our chance to take the lead in the race. Rylux and AL, alter our course around them, so they don’t detect us as we pass by. 
+ 
+* Marilyn lets out a sigh of relief, but Rylux mutters under his breath as he returns to his station. AL adjusts the course and the ship turns and begins passing the other ships, giving the battle a wide berth. A new alarm begins to buzz. * 
+
+ Bro: Captain, we’re receiving a radio signal from one of the ships. They know we’re here.  
+ 
+MC: Play the transmission. 
+ 
+* A loud, gruff voice is heard speaking a strange language. Rylux becomes pale. * 
+ 
+Rylux: It is the Roosktain captain. 
+ 
+Bro: What’s he saying Rylux? Can you translate? 
+ 
+Rylux: He sees our ship. He says he won’t let us escape… 
+
+&lt;&lt;if $moneyUpdate is 500000&gt;&gt;
+	* There is sudden, harsh turbulence as the ship comes under fire from the Roosktains. Because the MC tried to find more investors and sponsors for building this ship, the extra money the team acquired is able to withstand some damage from the enemy attack. * 
+
+&lt;&lt;elseif $moneyUpdate is 1000000&gt;&gt;
+	* There is sudden, harsh turbulence as the ship comes under fire from the Roosktains. Because the MC went to the casino and won a lot of money, the ship is barely scratched thanks to the highly expensive shield. * 
+
+&lt;&lt;elseif $moneyUpdate is 125000&gt;&gt;
+	* There is sudden, harsh turbulence as the ship comes under fire from the Roosktains. Because the MC went to the casino and didn&#39;t win a lot of money, the ship is quite damaged. *
+
+&lt;&lt;elseif $moneyUpdate is 25000&gt;&gt;
+	* There is sudden, harsh turbulence as the ship comes under fire from the Roosktains. Because the MC decided to invest in cat food stock, the funding is not enough to provide enough protection. Therefore, the ship suffers severe damage.*
+
+
+&lt;&lt;/if&gt;&gt;
+
+MC: We have damage to one to the engines. AL, we need to get away from here, now!  
+ 
+AL: Affirmative, engaging in evasive maneuvers. 
+ 
+* The ship is able to escape without sustaining any more significant damage. The other teams resume battle and our ship is able to escape. * 
+ 
+Marilyn: Oh my gosh! I can’t believe we’re still alive! 
+ 
+Rylux: (pale) We must hurry away from here. If the Roosktain ship finds us, we can not face them alone. 
+ 
+Bro: First we need to stop and assess the damage. The battle should keep them away from us for a while. AL, are scanners showing anywhere nearby that we can land to assess damage.  
+ 
+AL: There is a nearby astrological body that we can land on. I will input the coordinates now. 
+
+&lt;&lt;if $moneyUpdate &gt;= 500000&gt;&gt;
+[[Land on astrological body-&gt;Twilight Zone Scenario 2]]
+
+&lt;&lt;else&gt;&gt;
+[[Land on astrological body-&gt;Twilight Zone Scenario 1]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="Twilight Zone Scenario 2" tags="" position="1708,291" size="100,100">[After the unforeseen space battle, the crew flies out of course and struggles to find their bearings] [Everything goes pitch black and no sound can be heard] 
+ 
+ 
+A Familiar Robotic Voice – “Wake up, honey. You’re going to be late.”
+
+MC: “Who are you?” 
+
+A Familiar Robotic Voice – “It’s your mother, silly.” 
+
+[You open your eyes.] 
+
+Mother: “You’re going to be late for school, if you don’t hurry. 
+
+Brocklett is waiting for you downstairs.” 
+
+MC: “Huh?” 
+
+[You feel a small itch on your left arm.] 
+[You get changed and walk down stairs to see Brocklett] 
+
+Brocklett: “Sleeping in again? You’re lucky I’m here to make sure you get to school on time.” 
+
+[ Brocklett and you walk to school]
+
+Brocklett: “Were you studying for the math exam last night, I think I’m going to ace it.” 
+
+&lt;div id=&quot;user-choices&quot;&gt;
+\&lt;&lt;link &quot;“Math test?” &quot;&gt;&gt;
+	&lt;&lt;replace &quot;#user-choices&quot;&gt;&gt;
+MC: Math test?
+
+Brocklett: “LOL, I guess you’re not getting the A this time.”
+		
+[Brocklett and you get to school on time, seeing the many teenagers walking around] 
+
+Brocklett: “Hey there’s Marklyn, you know I think he totally likes you.” 
+
+[ Marklyn walks up] 
+
+Marklyn: “Hey what’s up? We still going to the mall later?” 
+
+Brocklett – “Yeah, totally.”
+
+[[continue Twilight Zone Scenario 2]]
+	&lt;&lt;/replace&gt;&gt;
+&lt;&lt;/link&gt;&gt;
+
+&lt;&lt;link &quot;“I don’t know what you’re talking about.&quot;&gt;&gt;
+	&lt;&lt;replace &quot;#user-choices&quot;&gt;&gt;
+MC: I don’t know what you’re talking about. 	
+	
+Brocklett: “LOL, I guess you’re not getting the A this time.”
+		
+[Brocklett and you get to school on time, seeing the many teenagers walking around] 
+
+Brocklett: “Hey there’s Marklyn, you know I think he totally likes you.” 
+
+[ Marklyn walks up] 
+
+Marklyn: “Hey what’s up? We still going to the mall later?” 
+
+Brocklett – “Yeah, totally.”
+
+[[continue Twilight Zone Scenario 2]]
+	&lt;&lt;/replace&gt;&gt;
+&lt;&lt;/link&gt;&gt;
+
+
+&lt;&lt;link &quot;“Um, no?&quot;&gt;&gt;
+	&lt;&lt;replace &quot;#user-choices&quot;&gt;&gt;
+MC: Um, no?
+
+Brocklett: “LOL, I guess you’re not getting the A this time.” 
+		
+[Brocklett and you get to school on time, seeing the many teenagers walking around] 
+
+Brocklett: “Hey there’s Marklyn, you know I think he totally likes you.”  
+
+[ Marklyn walks up] 
+
+Marklyn: “Hey what’s up? We still going to the mall later?” 
+
+Brocklett – “Yeah, totally.”
+
+[[continue Twilight Zone Scenario 2]]
+	&lt;&lt;/replace&gt;&gt;
+	&lt;&lt;/link&gt;&gt;
+	
+&lt;/div&gt;
+
+
+
+
+
+
+</tw-passagedata><tw-passagedata pid="19" name="Twilight Zone Scenario 1" tags="" position="1557,293" size="100,100">MC: “Is everyone okay?”
+
+Rylux: “I just squeezed all the juice out of my bottle and now its all over me! No I’m not fine!”
+
+Marilyn: “I’m okay.” 
+
+AL: “I’m missing an ear!”
+
+Brock: “You don’t have any ears, AL. Everything is fine over here.” 
+
+MC: “Rylux, what’s the status on the ship.” 
+
+Rylux: “Going to need some repairs, it’s going to take some time.” 
+
+MC: “While you do that, the team will survey the area.” 
+
+[ The crew steps outside the ship and explores the surrounding area.] 
+[ After an hour of searching, they find nothing. ] 
+
+Brock: “Hey AL, how big is this planet?” 
+
+AL: “My scanners indicated that it’s big but not as big as your mom.” 
+
+Marilyn – “Ouch.” 
+
+[ Marilyn walks away from the group as they finds two flowers behind a rock. ]  
+
+Marilyn: “Hey, I found two flowers behind this rock! There’s life on this planet!” 
+
+Brock: “Awesome, perfect for you research.” 
+
+Marilyn: “I’m going to take one back for research.” 
+[ She pulls one from the soil. ] 
+
+[ A giant scream comes from the flower. ] 
+
+Flower 1: “Stop, it hurts!” 
+
+[ Marilyn quickly lets go. ] 
+
+Marilyn: “You can talk?!” 
+
+Flower 1: “I’m telepathically communicating with you, and we don’t have any mouths to talk with, you idiot!” 
+
+Flower 2: “How dare you grab her like that. Do you know what Title IV is? Do you have any respect for  plants?” 
+
+Marilyn: “Yes, I’m sorry. I’m a botanist. I love all plant life.”
+
+Flower 2: “Well, it doesn’t look like it.” 
+
+[ The crew from afar looks at her talking to herself. ] 
+
+Brock: “Hey are you okay?” 
+
+Marilyn: “These flowers, they’re talk… I mean communicating with me.”
+
+Brock: “What do you mean communicating?” 
+
+[ Marilyn rushes over to the crew, dragging them to the flowers. ] 
+
+[ She accidently trips over the rock and lands on the flowers. ] 
+
+[ The flowers scream in pain as it projects into Marylin’s mind] 
+
+Marilyn: “Oh my god! I’m so sorry! It was an accident!” 
+
+Flower 1: “You grab me and now you smooshed us!? My love, are you alive?” 
+
+[ The sound of silence. ] 
+
+Flower 1: “MURDERER! My life is fading away… I will be with you soon enough my love…” 
+
+[ The lonely flower dies. ] 
+
+[ Marilyn screams in horror of her own doing. ] 
+
+Brock – “Marilyn!!! What going on with you!” 
+
+[ Marilyn stares at the murdered couple with a dead look in her eyes. ] 
+
+Marilyn: “Nothing… Let’s get back to the ship.” 
+
+[ The crew walks back to the ship. ] 
+
+Rylux – “The ship is ready to go. What happened to her?” 
+
+Brock: “We don’t know.” 
+
+MC: “She’ll tell us when she’s ready.” 
+
+[ The crew leaves the plane, getting back to the race to Uranus. ] </tw-passagedata><tw-passagedata pid="20" name="continue Twilight Zone Scenario 2" tags="" position="1708,441" size="100,100">&lt;div id=&quot;user-choices&quot;&gt;
+\&lt;&lt;link &quot;Huh?&quot;&gt;&gt;
+	&lt;&lt;replace &quot;#user-choices&quot;&gt;&gt;
+	
+	Brocklett – “Never mind her, she’s alittle tired today.” 
+	
+Marklyn– “Cool. Well, I gotta go, see you later.” 
+
+[Marklyn walks away] 
+[Your left arm feels itchier.] 
+
+Brocklett – “You’ve been totally weird tod… Omg, its Rylxa with her friends.” 
+
+[Rylxa walks by with her friends.] 
+
+Rylxa– “Hey losers. Looking really lame today! How do you girls do it! Ha-ha!.” 
+
+Brocklett – “I don’t know why she’s mean...” 
+
+[You go through the day like it’s any other day.] 
+[Brocklett and you meet up with Marklyn to go to mall] 
+
+Brocklett – “That math test was so totally easy, especially…” 
+
+Marklyn– “Hold up, Rylxa fighting those girls in that alley?” 
+
+Brocklett – “I think so, looks like she’s getting a beating.” 
+
+Marklyn– “Should we help?” 
+
+MC – “ Yes, let’s hurry.” 
+
+[Rushing over, you see Rylxa getting her face pummeled]  
+
+MC – “ Hey, stop punching her. Whatever she did I think she had enough.” 
+
+[The hooligan girl punching Rylxa gives you a long stare] 
+
+[She stops punching Rylxa and walks away, spitting on Rylxa before she does] 
+
+Rylxa– “I never asked for help…” 
+
+MC – “You looked like you needed help.” 
+
+Rylxa– “Well, don’t expect any favors from me.” 
+
+MC – “I don’t expect anything from you...” 
+
+[The itch on your arm greatly intensifies] 
+
+[Rylxa notices the rash on your left arm] 
+
+Rylxa– “What the hell is that on your arm?” 
+
+[You lift up your arm and seeing chunks of skin peeled off]
+
+Brocklett – “Woah, that’s one bad rash. You should see a doctor.” 
+
+[The itch becomes worse as you keep scratching it.] 
+
+Brocklett – “Hey you should stop...” 
+
+MC – “I can’t stop itching it!” 
+
+[You start pulling your skin and it stretches like elastic, finally tearing off] 
+
+Rylxa– “What the fuck…” 
+
+Marklyn– “Stop, you’re going to hurt yourself!” 
+
+[Marklyn rushes over and tries to stop you.] 
+
+MC – “It doesn’t hurt at…” 
+
+[You dig your nails into face and rip off your face.] 
+
+[You finally finish ripping off the remains of your face as if it were a mask.] 
+
+Marklyn– “Oh my God! You’re a dude!? I had a crush on a …” 
+
+[He freezes in surprise.] 
+
+MC – “I’m starting to remember now!” 
+
+[You walk over to Brocklett and grabs his face to pull his face off.] 
+
+[Brocklett screams in horror.] 
+
+Rylxa– “This is really fucked up…” 
+
+[With his face ripped off, Brocklett shows her face, exposing her true face.] 
+
+MC – “Pull your face off Marilyn.” 
+
+[Marklyn still stunned in horror.] 
+
+[Brocklett comes over and pulls her face off.] 
+
+Marilyn– “I…I…I remember now! What the hell is going on!?” 
+
+MC – “Let’s get Rylux’s memories back.” 
+
+[They stare a Rylxa.] 
+
+[They eventually rip off her face as well.] 
+
+Brocklett – “What happened? How did this happen and where are we?” 
+
+[ A giggle is heard like an echo in a cave.] 
+[ The giggling gets louder.] 
+
+MC – “Who’s there? Show yourself!” 
+
+[ A gnome appears from the sky, descending like Jesus.] 
+
+Mysterious God-like Gnome –  “ Well, I guess my fun over.” 
+
+[ The Gnome snaps his fingers.] 
+
+[Pitch Darkness and the Sound of Silence] 
+
+[Everyone walks up as if they woke up from a nap.] 
+
+Brock– “Hmm... Did anyone dream about us being as highschool gender-swapped students and encountering a God-like gnome?” 
+
+Marilyn– “I had the same dream!” 
+
+[Rylux looks at Brock, confirming his question.] 
+
+[[continue Twilight Zone Scenario 2 part 2]]
+	&lt;&lt;/replace&gt;&gt;
+&lt;&lt;/link&gt;&gt;
+
+&lt;&lt;link &quot;Yeah, like totally times two.&quot;&gt;&gt;
+	&lt;&lt;replace &quot;#user-choices&quot;&gt;&gt;
+	
+	Brocklett – “Never mind her, she’s alittle tired today.” 
+	
+Marklyn– “Cool. Well, I gotta go, see you later.” 
+
+[Marklyn walks away] 
+[Your left arm feels itchier.] 
+
+Brocklett – “You’ve been totally weird tod… Omg, its Rylxa with her friends.” 
+
+[Rylxa walks by with her friends.] 
+
+Rylxa– “Hey losers. Looking really lame today! How do you girls do it! Ha-ha!.” 
+
+Brocklett – “I don’t know why she’s mean...” 
+
+[You go through the day like it’s any other day.] 
+[Brocklett and you meet up with Marklyn to go to mall] 
+
+Brocklett – “That math test was so totally easy, especially…” 
+
+Marklyn– “Hold up, Rylxa fighting those girls in that alley?” 
+
+Brocklett – “I think so, looks like she’s getting a beating.” 
+
+Marklyn– “Should we help?” 
+
+MC – “ Yes, let’s hurry.” 
+
+[Rushing over, you see Rylxa getting her face pummeled]  
+
+MC – “ Hey, stop punching her. Whatever she did I think she had enough.” 
+
+[The hooligan girl punching Rylxa gives you a long stare] 
+
+[She stops punching Rylxa and walks away, spitting on Rylxa before she does] 
+
+Rylxa– “I never asked for help…” 
+
+MC – “You looked like you needed help.” 
+
+Rylxa– “Well, don’t expect any favors from me.” 
+
+MC – “I don’t expect anything from you...” 
+
+[The itch on your arm greatly intensifies] 
+
+[Rylxa notices the rash on your left arm] 
+
+Rylxa– “What the hell is that on your arm?” 
+
+[You lift up your arm and seeing chunks of skin peeled off]
+
+Brocklett – “Woah, that’s one bad rash. You should see a doctor.” 
+
+[The itch becomes worse as you keep scratching it.] 
+
+Brocklett – “Hey you should stop...” 
+
+MC – “I can’t stop itching it!” 
+
+[You start pulling your skin and it stretches like elastic, finally tearing off] 
+
+Rylxa– “What the fuck…” 
+
+Marklyn– “Stop, you’re going to hurt yourself!” 
+
+[Marklyn rushes over and tries to stop you.] 
+
+MC – “It doesn’t hurt at…” 
+
+[You dig your nails into face and rip off your face.] 
+
+[You finally finish ripping off the remains of your face as if it were a mask.] 
+
+Marklyn– “Oh my God! You’re a dude!? I had a crush on a …” 
+
+[He freezes in surprise.] 
+
+MC – “I’m starting to remember now!” 
+
+[You walk over to Brocklett and grabs his face to pull his face off.] 
+
+[Brocklett screams in horror.] 
+
+Rylxa– “This is really fucked up…” 
+
+[With his face ripped off, Brocklett shows her face, exposing her true face.] 
+
+MC – “Pull your face off Marilyn.” 
+
+[Marklyn still stunned in horror.] 
+
+[Brocklett comes over and pulls her face off.] 
+
+Marilyn– “I…I…I remember now! What the hell is going on!?” 
+
+MC – “Let’s get Rylux’s memories back.” 
+
+[They stare a Rylxa.] 
+
+[They eventually rip off her face as well.] 
+
+Brocklett – “What happened? How did this happen and where are we?” 
+
+[ A giggle is heard like an echo in a cave.] 
+[ The giggling gets louder.] 
+
+MC – “Who’s there? Show yourself!” 
+
+[ A gnome appears from the sky, descending like Jesus.] 
+
+Mysterious God-like Gnome –  “ Well, I guess my fun over.” 
+
+[ The Gnome snaps his fingers.] 
+
+[Pitch Darkness and the Sound of Silence] 
+
+[Everyone walks up as if they woke up from a nap.] 
+
+Brock– “Hmm... Did anyone dream about us being as highschool gender-swapped students and encountering a God-like gnome?” 
+
+Marilyn– “I had the same dream!” 
+
+[Rylux looks at Brock, confirming his question.] 
+
+[[continue Twilight Zone Scenario 2 part 2]]
+	&lt;&lt;/replace&gt;&gt;
+&lt;&lt;/link&gt;&gt;
+
+&lt;&lt;link &quot;No, clue what you’re talking about.&quot;&gt;&gt;
+	&lt;&lt;replace &quot;#user-choices&quot;&gt;&gt;
+	
+	Brocklett – “Never mind her, she’s alittle tired today.” 
+	
+Marklyn– “Cool. Well, I gotta go, see you later.” 
+
+[Marklyn walks away] 
+[Your left arm feels itchier.] 
+
+Brocklett – “You’ve been totally weird tod… Omg, its Rylxa with her friends.” 
+
+[Rylxa walks by with her friends.] 
+
+Rylxa– “Hey losers. Looking really lame today! How do you girls do it! Ha-ha!.” 
+
+Brocklett – “I don’t know why she’s mean...” 
+
+[You go through the day like it’s any other day.] 
+[Brocklett and you meet up with Marklyn to go to mall] 
+
+Brocklett – “That math test was so totally easy, especially…” 
+
+Marklyn– “Hold up, Rylxa fighting those girls in that alley?” 
+
+Brocklett – “I think so, looks like she’s getting a beating.” 
+
+Marklyn– “Should we help?” 
+
+MC – “ Yes, let’s hurry.” 
+
+[Rushing over, you see Rylxa getting her face pummeled]  
+
+MC – “ Hey, stop punching her. Whatever she did I think she had enough.” 
+
+[The hooligan girl punching Rylxa gives you a long stare] 
+
+[She stops punching Rylxa and walks away, spitting on Rylxa before she does] 
+
+Rylxa– “I never asked for help…” 
+
+MC – “You looked like you needed help.” 
+
+Rylxa– “Well, don’t expect any favors from me.” 
+
+MC – “I don’t expect anything from you...” 
+
+[The itch on your arm greatly intensifies] 
+
+[Rylxa notices the rash on your left arm] 
+
+Rylxa– “What the hell is that on your arm?” 
+
+[You lift up your arm and seeing chunks of skin peeled off]
+
+Brocklett – “Woah, that’s one bad rash. You should see a doctor.” 
+
+[The itch becomes worse as you keep scratching it.] 
+
+Brocklett – “Hey you should stop...” 
+
+MC – “I can’t stop itching it!” 
+
+[You start pulling your skin and it stretches like elastic, finally tearing off] 
+
+Rylxa– “What the fuck…” 
+
+Marklyn– “Stop, you’re going to hurt yourself!” 
+
+[Marklyn rushes over and tries to stop you.] 
+
+MC – “It doesn’t hurt at…” 
+
+[You dig your nails into face and rip off your face.] 
+
+[You finally finish ripping off the remains of your face as if it were a mask.] 
+
+Marklyn– “Oh my God! You’re a dude!? I had a crush on a …” 
+
+[He freezes in surprise.] 
+
+MC – “I’m starting to remember now!” 
+
+[You walk over to Brocklett and grabs his face to pull his face off.] 
+
+[Brocklett screams in horror.] 
+
+Rylxa– “This is really fucked up…” 
+
+[With his face ripped off, Brocklett shows her face, exposing her true face.] 
+
+MC – “Pull your face off Marilyn.” 
+
+[Marklyn still stunned in horror.] 
+
+[Brocklett comes over and pulls her face off.] 
+
+Marilyn– “I…I…I remember now! What the hell is going on!?” 
+
+MC – “Let’s get Rylux’s memories back.” 
+
+[They stare a Rylxa.] 
+
+[They eventually rip off her face as well.] 
+
+Brocklett – “What happened? How did this happen and where are we?” 
+
+[ A giggle is heard like an echo in a cave.] 
+[ The giggling gets louder.] 
+
+MC – “Who’s there? Show yourself!” 
+
+[ A gnome appears from the sky, descending like Jesus.] 
+
+Mysterious God-like Gnome –  “ Well, I guess my fun over.” 
+
+[ The Gnome snaps his fingers.] 
+
+[Pitch Darkness and the Sound of Silence] 
+
+[Everyone walks up as if they woke up from a nap.] 
+
+Brock– “Hmm... Did anyone dream about us being as highschool gender-swapped students and encountering a God-like gnome?” 
+
+Marilyn– “I had the same dream!” 
+
+[Rylux looks at Brock, confirming his question.] 
+
+[[continue Twilight Zone Scenario 2 part 2]]
+	&lt;&lt;/replace&gt;&gt;
+	&lt;&lt;/link&gt;&gt;
+	
+&lt;&lt;link &quot;No, when did we agree to this?&quot;&gt;&gt;
+	&lt;&lt;replace &quot;#user-choices&quot;&gt;&gt;
+	
+	Brocklett – “Never mind her, she’s alittle tired today.” 
+	
+Marklyn– “Cool. Well, I gotta go, see you later.” 
+
+[Marklyn walks away] 
+[Your left arm feels itchier.] 
+
+Brocklett – “You’ve been totally weird tod… Omg, its Rylxa with her friends.” 
+
+[Rylxa walks by with her friends.] 
+
+Rylxa– “Hey losers. Looking really lame today! How do you girls do it! Ha-ha!.” 
+
+Brocklett – “I don’t know why she’s mean...” 
+
+[You go through the day like it’s any other day.] 
+[Brocklett and you meet up with Marklyn to go to mall] 
+
+Brocklett – “That math test was so totally easy, especially…” 
+
+Marklyn– “Hold up, Rylxa fighting those girls in that alley?” 
+
+Brocklett – “I think so, looks like she’s getting a beating.” 
+
+Marklyn– “Should we help?” 
+
+MC – “ Yes, let’s hurry.” 
+
+[Rushing over, you see Rylxa getting her face pummeled]  
+
+MC – “ Hey, stop punching her. Whatever she did I think she had enough.” 
+
+[The hooligan girl punching Rylxa gives you a long stare] 
+
+[She stops punching Rylxa and walks away, spitting on Rylxa before she does] 
+
+Rylxa– “I never asked for help…” 
+
+MC – “You looked like you needed help.” 
+
+Rylxa– “Well, don’t expect any favors from me.” 
+
+MC – “I don’t expect anything from you...” 
+
+[The itch on your arm greatly intensifies] 
+
+[Rylxa notices the rash on your left arm] 
+
+Rylxa– “What the hell is that on your arm?” 
+
+[You lift up your arm and seeing chunks of skin peeled off]
+
+Brocklett – “Woah, that’s one bad rash. You should see a doctor.” 
+
+[The itch becomes worse as you keep scratching it.] 
+
+Brocklett – “Hey you should stop...” 
+
+MC – “I can’t stop itching it!” 
+
+[You start pulling your skin and it stretches like elastic, finally tearing off] 
+
+Rylxa– “What the fuck…” 
+
+Marklyn– “Stop, you’re going to hurt yourself!” 
+
+[Marklyn rushes over and tries to stop you.] 
+
+MC – “It doesn’t hurt at…” 
+
+[You dig your nails into face and rip off your face.] 
+
+[You finally finish ripping off the remains of your face as if it were a mask.] 
+
+Marklyn– “Oh my God! You’re a dude!? I had a crush on a …” 
+
+[He freezes in surprise.] 
+
+MC – “I’m starting to remember now!” 
+
+[You walk over to Brocklett and grabs his face to pull his face off.] 
+
+[Brocklett screams in horror.] 
+
+Rylxa– “This is really fucked up…” 
+
+[With his face ripped off, Brocklett shows her face, exposing her true face.] 
+
+MC – “Pull your face off Marilyn.” 
+
+[Marklyn still stunned in horror.] 
+
+[Brocklett comes over and pulls her face off.] 
+
+Marilyn– “I…I…I remember now! What the hell is going on!?” 
+
+MC – “Let’s get Rylux’s memories back.” 
+
+[They stare a Rylxa.] 
+
+[They eventually rip off her face as well.] 
+
+Brocklett – “What happened? How did this happen and where are we?” 
+
+[ A giggle is heard like an echo in a cave.] 
+[ The giggling gets louder.] 
+
+MC – “Who’s there? Show yourself!” 
+
+[ A gnome appears from the sky, descending like Jesus.] 
+
+Mysterious God-like Gnome –  “ Well, I guess my fun over.” 
+
+[ The Gnome snaps his fingers.] 
+
+[Pitch Darkness and the Sound of Silence] 
+
+[Everyone walks up as if they woke up from a nap.] 
+
+Brock– “Hmm... Did anyone dream about us being as highschool gender-swapped students and encountering a God-like gnome?” 
+
+Marilyn– “I had the same dream!” 
+
+[Rylux looks at Brock, confirming his question.] 
+
+[[continue Twilight Zone Scenario 2 part 2]]
+	&lt;&lt;/replace&gt;&gt;
+	&lt;&lt;/link&gt;&gt;
+&lt;/div&gt;
+
+</tw-passagedata><tw-passagedata pid="21" name="continue Twilight Zone Scenario 2 part 2" tags="" position="1708,591" size="100,100">&lt;div id=&quot;user-choices&quot;&gt;
+\&lt;&lt;link &quot;I think we just met God or the devil.&quot;&gt;&gt;
+	&lt;&lt;replace &quot;#user-choices&quot;&gt;&gt;
+MC - I think we just met God or the devil.
+
+Brock– “What do we do from here?” 
+
+MC – “We continue on our mission.” 
+
+[[End Twilight Zone-&gt;Continues Act 2]]
+
+&lt;&lt;/replace&gt;&gt;
+&lt;&lt;/link&gt;&gt;
+
+&lt;&lt;link &quot;I don’t know, and I don’t want to find out.&quot; &gt;&gt;
+	&lt;&lt;replace &quot;#user-choices&quot;&gt;&gt;
+MC: I don’t know, and I don’t want to find out.
+
+Brock– “What do we do from here?” 
+	
+MC – “We continue on our mission.” 
+
+	[[End Twilight Zone-&gt;Continues Act 2]]
+	&lt;&lt;/replace&gt;&gt;
+&lt;&lt;/link&gt;&gt;
+
+&lt;&lt;link &quot;I think we’ve been gnomed.&quot; &gt;&gt;
+	&lt;&lt;replace &quot;#user-choices&quot;&gt;&gt;
+MC - I think we’ve been gnomed.
+
+Brock– “What do we do from here?” 
+	
+MC – “We continue on our mission.” 
+
+	[[End Twilight Zone-&gt;Continues Act 2]]&lt;&lt;/replace&gt;&gt;
+	&lt;&lt;/link&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="22" name="Continues Act 2" tags="" position="1708,741" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="23" name="2 weeks later" tags="" position="697,1662" size="100,100">2 WEEKS LATER
+
+*Phone rings from Unknown caller 
+
+&lt;div id=&quot;user-choices&quot;&gt;
+&lt;&lt;link &quot;Pick up&quot;&gt;&gt;
+	&lt;&lt;replace &quot;#user-choices&quot;&gt;&gt;
+	X: &quot;(*Strange accent) Good evening.&quot;
+	[[Who is this?]]
+	&lt;&lt;/replace&gt;&gt;
+&lt;&lt;/link&gt;&gt;
+
+&lt;&lt;link &quot;Hang up&quot;&gt;&gt;
+	&lt;&lt;replace &quot;#user-choices&quot;&gt;&gt;
+	 Phone rings again
+	[[Hang up]]
+	&lt;&lt;/replace&gt;&gt;
+&lt;&lt;/link&gt;&gt;
+
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="24" name="Who is this?" tags="" position="622,1812" size="100,100">X: I am solution to your problem. 
+
+[[What are you talking about?]]
+[[Hang up]]</tw-passagedata><tw-passagedata pid="25" name="Hang up" tags="" position="772,1812" size="100,100">Phone rings again
+
+[[Who is this?]]
+[[Hang up]]</tw-passagedata><tw-passagedata pid="26" name="What are you talking about?" tags="" position="618,1947" size="100,100">X:  I’m engineer who’s going to finish building your spaceship, so you can get to Uranus. 
+
+[[Why should I trust a person who won’t reveal his name?]]
+
+[[Hang up]] </tw-passagedata><tw-passagedata pid="27" name="Why should I trust a person who won’t reveal his name?" tags="" position="617,2091" size="100,100">X: Meet me on bridge at Anthem Park tonight at 7. 
+ 
+*Phone hangs up  
+*Brock comes into the office  
+
+Brock: Hey! I wanted to talk to you about finding a new lead engineer, it seems no one on the team is able to completely understand the instructions from the box. 
+
+&lt;div id=&quot;user-choices&quot;&gt;
+\&lt;&lt;link &quot;Well, we might just have our solution, we’re going to Anthem Park tonight.&quot;&gt;&gt;
+	&lt;&lt;replace &quot;#user-choices&quot;&gt;&gt;
+	
+	Brock: Wait, what happened?  
+	
+MC: I just got a call from someone who wants to be our lead engineer and told me to meet him at Anthem Park Tonight.  
+
+Brock: Who is this guy and why at a park?  
+
+MC: I don’t know, he didn’t give a name or anything.  
+
+Brock: Bro, this seems really sketchy. What if he’s out to harm you? 
+
+ MC: I doubt it, and I’m curious to find out who this mysterious person is.  
+ 
+Brock: Well, if you’re going, then I’m going with you. If anything 
+happens, I’ll be there to protect you.
+
+[[Appreciate it.]]
+
+	&lt;&lt;/replace&gt;&gt;
+&lt;&lt;/link&gt;&gt;
+
+&lt;&lt;link &quot;Some mysterious guy just called and told me that he wants to finish our spaceship. &quot;&gt;&gt;
+	&lt;&lt;replace &quot;#user-choices&quot;&gt;&gt;
+	
+	 Brock: Whoa, sounds mysterious... Who would just call and say that they want to build a spaceship?  
+	 
+MC: I don’t know, he didn’t give a name or anything.  
+
+Brock: Bro, this seems really sketchy. What if he’s out to harm you? 
+
+MC: I doubt it, and I’m curious to find out who this mysterious person is. 
+
+Brock: Well, if you’re going, then I’m going with you. If anything happens, I’ll be there to protect you. 
+
+[[Appreciate it.]]
+
+	&lt;&lt;/replace&gt;&gt;
+&lt;&lt;/link&gt;&gt;
+
+&lt;&lt;link &quot;Um, I think I just got a crank call from our former lead engineer. &quot;&gt;&gt;
+	&lt;&lt;replace &quot;#user-choices&quot;&gt;&gt;
+	 Brock: Wait, what happened?  
+	 
+MC: I don’t know. Someone just called and told me that he wants to finish our spaceship, so I was just assuming that it was our last lead engineer trying to prank us. 
+
+ Brock: You think he’d really do that? 
+ 
+ MC: To be honest…no, but I can’t find a reason why someone would be so mysterious to call me like that. I’m going to go; I’m curious to find out who this caller is. 
+ 
+Brock: Well, if you’re going, then I’m going with you. If anything happens, I’ll be there to protect you. 
+
+[[Appreciate it.]]
+	&lt;&lt;/replace&gt;&gt;
+&lt;&lt;/link&gt;&gt;
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="28" name="Appreciate it." tags="" position="617,2241" size="100,100">LATER THAT NIGHT 
+
+*Brock and MC are standing in the middle of Anthem Park in a big grassy area with many trees sprawling throughout.  In front of them is a large pond with a small bridge connecting the area Brock and MC are standing in with the area that contains a sandbox with slides and swings. A thick fog is present hiding/covering anything on the bridge or past it.   
+ 
+Brock: Where is this guy, the park is so foggy tonight. Wait! I see him!  
+*The fog has cleared revealing a middle-aged man wearing a trench coat and blood red scarf standing by himself on the bridge over the pond. MC and Brock approach the man. 
+
+Brock: Are you the one who called?  
+
+X: Yes, I see you are his company.
+
+Brock: Why the strange phone call and why meet at a park?  
+
+X: This is for my own safety. You see, I use to be part of Roosktain Nation, and I am afraid that I might be tracked. 
+
+Brock: Roosktain Nation? You mean THE Roosktain Nation who constantly picks fights with our country and is referred to by our government as “one of our greatest enemies”?  
+
+X: Yes, and this time it is not just your country that is in danger.  
+Brock: Explain yourself.  
+
+X: My country has received box as well, and they do not just plan to go to Uranus, but to conquer it as well.  Afterwards, they plan to return to conquer Earth.  
+
+Brock: WHAT?  
+
+X: Up until a short while ago, I was the former lead engineer for the Roosktain Nation’s spacecraft.  After learning their true plans to learn from the aliens on Uranus and eventually 
+subjugate them into slavery, I refused to further work on their spaceship.  Because I decided to do right thing, I got kicked off their space team and banished from my own home country.  BANISHED!  Can you believe it?!   
+
+Brock:  I’m sorry, but alien slavery?  That sounds insane!  Do you believe this guy?  
+
+X: Why would I lie?  You think me to be Roosktaini spy?  What good would that do if Roosktain Nation is nearly finished with their ship while you can’t even build yours. Let me join you to prevent them from taking over this world and Uranus. 
+
+[[This sounds like something your country would do, if accepting you into our team means that we’ll be able to save our world, then so be it.]]
+
+[[I don’t believe you, but we’re desperate, so I accept your offer. But you’ll be under tight surveillance throughout the entirety of our journey, so don’t think that we trust you yet.]]
+
+[[No, I don’t believe you at all. I think you’re a spy. Your country probably doesn’t even have a box to begin with and is trying to steal ours. We’re leaving.]]</tw-passagedata><tw-passagedata pid="29" name="This sounds like something your country would do, if accepting you into our team means that we’ll be able to save our world, then so be it." tags="" position="467,2391" size="100,100">X: Excellent. My name is Shady. Slim Shady.  
+
+Brock: …Really? 
+
+X: No, not really!  Are you dense?  *Sigh* Looks like I’ll be working with some really gullible people… Anyhow, my real name is Ryluxemborgervisch Ozkarpolawsqytoria. 
+ 
+Brock: Wow.  Um, how about we just call you Rylux for short? 
+
+X: Hmph.  I think I actually prefer Slim Shady, but I guess Rylux will do. 
+
+[[1 month later]]</tw-passagedata><tw-passagedata pid="30" name="I don’t believe you, but we’re desperate, so I accept your offer. But you’ll be under tight surveillance throughout the entirety of our journey, so don’t think that we trust you yet." tags="" position="617,2391" size="100,100">X: Excellent. My name is Shady. Slim Shady.  
+
+Brock: …Really? 
+
+X: No, not really!  Are you dense?  *Sigh* Looks like I’ll be working with some really gullible people… Anyhow, my real name is Ryluxemborgervisch Ozkarpolawsqytoria. 
+ 
+Brock: Wow.  Um, how about we just call you Rylux for short? 
+
+X: Hmph.  I think I actually prefer Slim Shady, but I guess Rylux will do. 
+
+[[1 month later]]</tw-passagedata><tw-passagedata pid="31" name="No, I don’t believe you at all. I think you’re a spy. Your country probably doesn’t even have a box to begin with and is trying to steal ours. We’re leaving." tags="" position="767,2391" size="100,100">The story ends because they can’t finish the ship. 
+
+[[Main Menu]]</tw-passagedata><tw-passagedata pid="32" name="1 month later" tags="" position="467,2541" size="100,100">1 MONTH LATER 
+
+
+*Under strict surveillance, the new lead engineer, Rylux, has been working and making significant progress on the ship. The engineers working under Rylux respect him, but due to his rude and mean personality, everyone else thinks he is a jerk.   
+
+Brock: That guy is really impressive, but he is so rude to everyone. I still don’t trust him.   
+
+MC: As long he does his job and doesn’t do anything to sabotage us, then I can tolerate his attitude.  
+
+Brock: I guess that’s why you’re the captain.  Always seeing things rationally and all. Anyways, when is the sponsor going to send the botanist?  
+
+*Sound of approaching footsteps  
+
+Marilyn: Ahem, I’m right here. My name is Marilyn Cruz. Nice to meet you.
+
+Brock: Nice to meet you, I’m Brock Wyce, and this is our captain… 
+
+Marilyn: I know who he is, I’ve read about him in many scientific magazines.  
+
+*She looks at MC and smiles 
+
+Marilyn: I’ve always read about you, but I’ve never met you in person. 
+
+&lt;div id=&quot;user-choices&quot;&gt;
+\&lt;&lt;link &quot;Welcome aboard.&quot;&gt;&gt;
+	&lt;&lt;replace &quot;#user-choices&quot;&gt;&gt;
+	Marilyn: Glad to be here. 
+	
+	[[Continue Act 1 Part 3]]
+	&lt;&lt;/replace&gt;&gt;
+&lt;&lt;/link&gt;&gt;
+
+&lt;&lt;link &quot;Hi. *Winks*&quot;&gt;&gt;
+	&lt;&lt;replace &quot;#user-choices&quot;&gt;&gt;
+	 *Marilyn faints  
+	 
+	 Brock: Oh my god, are you okay?!   
+	 
+	 *She shakes her head and quickly gets up  
+	 
+	 Marilyn: Yeah, I think I just have jet lag from the flight here.
+	 
+	 (*Nervously laughs*) 
+	[[Continue Act 1 Part 3]]
+	&lt;&lt;/replace&gt;&gt;
+&lt;&lt;/link&gt;&gt;
+
+&lt;&lt;link &quot;Glad to be around another fellow scientist.&quot;&gt;&gt;
+	&lt;&lt;replace &quot;#user-choices&quot;&gt;&gt;
+	 Marilyn: As am I.  I’d love to hear your thoughts on quantum wormhole hopping. 
+	 
+	 MC: It’d be my pleasure.  I actually have a theory about that concept… 
+	[[Continue Act 1 Part 3]]
+	&lt;&lt;/replace&gt;&gt;
+&lt;&lt;/link&gt;&gt;
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="33" name="Continue Act 1 Part 3" tags="" position="467,2691" size="100,100">Marilyn: So, have you received the equipment for my workstation?
+
+MC: We received it, and it’s already been prepared. A week from now, we expect to be launching.  
+
+Marilyn: Ah yes, I’ve already been briefed on the launch date. Can you take me on a tour of the ship, captain? 
+
+&lt;div id=&quot;user-choices&quot;&gt;
+\&lt;&lt;link &quot;Unfortunately, I am much too busy. Brock can give you one. &quot;&gt;&gt;
+	&lt;&lt;replace &quot;#user-choices&quot;&gt;&gt;
+	MC: Unfortunately, I am much too busy. Brock can give you one.
+	
+	Brock: You’re not busy for another hour. We can all go look around the ship. 
+	[[Continue Act 1 Part 2 (2)]]
+	&lt;&lt;/replace&gt;&gt;
+&lt;&lt;/link&gt;&gt;
+
+&lt;&lt;link &quot;I’d be happy too.&quot;&gt;&gt;
+	&lt;&lt;replace &quot;#user-choices&quot;&gt;&gt;
+	MC: I’d be happy too.
+	
+	[[Continue Act 1 Part 2 (2)]]
+	&lt;&lt;/replace&gt;&gt;
+&lt;&lt;/link&gt;&gt;
+
+&lt;&lt;link &quot;The ship development is confidential. So…no. &quot;&gt;&gt;
+	&lt;&lt;replace &quot;#user-choices&quot;&gt;&gt;
+	MC: The ship development is confidential. So…no. 
+	
+	[[Continue Act 1 Part 2 (2)]]
+	&lt;&lt;/replace&gt;&gt;
+&lt;&lt;/link&gt;&gt;
+
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="34" name="Continue Act 1 Part 2 (2)" tags="" position="467,2841" size="100,100">*Rylux walks into the conversation 
+
+Rylux: Space ship is not ready yet. And even if it was, tour wouldn’t do any good for newbie girl here since ship is too complex for her to understand. 
+
+Marilyn: Uh, sir, I could definitely handle a space ship tour.  I have a PhD after all and - 
+
+Rylux: Zip it, Missy!  I wasn’t even talking to you.  If you had brain, you would have realized that.  
+
+Brock: Hey, cool it bro!  You’re being really rude to Ms. Marilyn. What do you have against her anyway? I mean you don’t even know her. 
+
+Rylux: I don’t have to.  She looks like my ex-girlfriend, so that’s all I need to conclude that this lady here is as smart as block of wood. 
+
+Brock: (*angry tone*) Dude! You better apologize to her this instant or -!  
+
+Rylux: Or what?! HMM??? I’m your only hope for completing construction of space ship.  Also, it’s free country here.  I speak what I feel.  Sue me!  For instance, I feel you’re almost as empty in the head as this lady for trying to defend her.   
+
+Brock: You -! 
+
+Marilyn: HOW DARE YOU INSULT MY INTELLIGENCE.  I’ll have you know that I’m the botanist of this crew!  
+
+Rylux: Botanist!? Ha ha! Why are we bringing a person who waters plants into space?  
+
+Brock: She is part of the organization that is sponsoring this ship.
+
+Rylux: You can’t afford to build this ship, so you beg for money. How embarrassing! Ha ha ha!  
+
+Brock: Seriously… what the heck man?  I thought you were one of the good guys now. Good guys treat others with respect, especially their team members. Also, good guys definitely don’t judge people based on their looks.  You better clean up your act if you expect to get along with the rest of the crew during the race. 
+
+Rylux: I am here to be engineer, not to make friends. 
+
+&lt;div id=&quot;user-choices&quot;&gt;
+&lt;&lt;link &quot;Enough! We are going to be crewmates throughout the whole voyage. We must tolerate each other.&quot;&gt;&gt;
+	&lt;&lt;replace &quot;#user-choices&quot;&gt;&gt;
+	MC: Enough! We are going to be crewmates throughout the whole voyage. We must tolerate each other.
+	
+	Marilyn: He’s right, I’ll look past this if I get an apology. 
+	
+	Rylux: Ha ha ha…maybe in your dreams. 
+	
+	[[Continue to Act 1 Part 3 (3)]]
+	&lt;&lt;/replace&gt;&gt;
+&lt;&lt;/link&gt;&gt;
+
+&lt;&lt;link &quot;Play nice.  We all need to get along with each other if we want to have any chance of winning the race.&quot;&gt;&gt;
+	&lt;&lt;replace &quot;#user-choices&quot;&gt;&gt;
+     MC: Play nice.  We all need to get along with each other if we want to have any chance of winning the race.
+	
+	 Marilyn: I’d like to get along with everyone, but a certain stubborn fool is making it real difficult… 
+	 
+	 Rylux: You’re the one making it difficult, toots.   
+	 
+	 Marilyn: How? 
+	 
+	 Rylux: By looking like my ex-girlfriend. 
+	 
+	 Marilyn: *rolls eyes* Give me a break. 
+	 
+	 [[Continue to Act 1 Part 3 (3)]]
+	&lt;&lt;/replace&gt;&gt;
+&lt;&lt;/link&gt;&gt;
+
+&lt;&lt;link &quot;If you don’t have anything nice to say, don’t say it at all.&quot;&gt;&gt;
+	&lt;&lt;replace &quot;#user-choices&quot;&gt;&gt;
+	MC: If you don’t have anything nice to say, don’t say it at all.
+	
+	Brock: Tell that to Mr. Obnoxious over there.  
+	
+	Rylux: I take pride in that nickname, so I get last laugh, Mr. [Roosktaini slur]! 
+	
+	Brock: Translate what you just called me this instant! 
+	
+	Rylux: Make me! 
+	
+	MC: If you two don’t knock it off with the constant squabbling, I’m gonna duct tape both of your mouths shut!! 
+	
+	*Silence
+	
+	[[Continue to Act 1 Part 3 (3)]]
+	&lt;&lt;/replace&gt;&gt;
+&lt;&lt;/link&gt;&gt;
+
+&lt;/div&gt;
+
+
+
+
+
+</tw-passagedata><tw-passagedata pid="35" name="Continue to Act 1 Part 3 (3)" tags="" position="603,2986" size="100,100">MC: Changing the subject, I’d like to introduce another crew member.
+
+Brock: Another crew member?  I didn’t know about this…  
+
+MC: Well you do now.  Any who, say hello to the autonomous service bot, AL.  
+
+AL: Greetings, it is AL.  
+
+*AL plays applauding sound 
+
+Brock: Whoa, I didn’t think this was going to be ready.  
+
+MC: This is just a prototype, but it’s been tested enough to help us on our trip.  
+
+AL: Hello all.  AL is happy to be of service.  Let AL know what you want, and AL will make your wish come true.  Like the genie in Aladdin.  Or the genie in I Dream of Jeannie.  Or Shaquille O’Neal in Kazaam.   AL is amused by AL’s movie and tv show references. 
+
+Brock: Hmm…Why does he refer to himself in the third person?  
+
+MC: Apparently, the guys in the CS department have a strange sense of humor and thought it’d be funny if the word “I” was removed from AL’s vocabulary. 
+
+*Marilyn walks over to AL 
+
+Marilyn: Hey there little guy, my name is Marilyn.  
+
+AL: Hello Marilyn!  Nice to be acquainted.  Beep.  Boop.  Analyzing female specimen… Height: 5 foot 5 inches…. Foot length: 8.5 inches…. Weight: 130 pounds…. Waist size: - 
+
+Marilyn: Hey, stop it!!! My weight and body measurements are supposed to be private!  And for the record, I weigh less than that… 
+
+Brock: Not cool AL!  
+
+Rylux: Ha ha ha! I like this robot, it is funny! 
+
+&lt;div id=&quot;user-choices&quot;&gt;
+&lt;&lt;link &quot;I’ll see to it that the CS department reprograms AL so that nothing like this ever happens again. &quot;&gt;&gt;
+	&lt;&lt;replace &quot;#user-choices&quot;&gt;&gt;
+	MC: I’ll see to it that the CS department reprograms AL so that nothing like this ever happens again. 
+	
+	Marilyn: Thank you. 
+	
+	Brock: That’s a relief to hear.  
+	
+	Rylux: That sucks. 
+	
+	AL: (Arnold Schwarzenegger voice) AL be back.
+	
+	MC: Regardless, this is going to be our crew. Brock is second in command. Rylux is our engineer.  Marilyn is our scientist, and AL is our serve bot.    
+	
+	AL: And MC is the captain. MC: Yes, that’s right AL, I’m th- AL: (*angrily*) Hey! Look at me. …Look at me. AL’s the captain now. 
+	
+	MC: … 
+    AL: (*jovially*) AL is kidding!  AL wanted to make a meme reference that was also a movie reference.  AL was successful.  Ha ha! 
+	
+	MC:  *Sigh* This is gonna be a long journey…   
+ 
+END OF PART 3 OF ACT 1 
+
+	[[Start Act 2]]
+	&lt;&lt;/replace&gt;&gt;
+&lt;&lt;/link&gt;&gt;
+
+&lt;&lt;link &quot;Don’t worry, AL now knows that it is not proper to measure and share the body information of any person without their consent. &quot;&gt;&gt;
+	&lt;&lt;replace &quot;#user-choices&quot;&gt;&gt;
+	 AL: Yes, AL understands now.  AL’s sincere apologies to Ms.  
+	 
+	 Marilyn. Marilyn: Apology accepted AL. 
+	 
+	MC: Regardless, this is going to be our crew. Brock is second in command. Rylux is our engineer.  Marilyn is our scientist, and AL is our serve bot.    
+	
+	AL: And MC is the captain. MC: Yes, that’s right AL, I’m th- AL: (*angrily*) Hey! Look at me. …Look at me. AL’s the captain now. 
+	
+	MC: … 
+	
+    AL: (*jovially*) AL is kidding!  AL wanted to make a meme reference that was also a movie reference.  AL was successful.  Ha ha! 
+	
+	MC:  *Sigh* This is gonna be a long journey…   
+ 
+END OF PART 3 OF ACT 1
+	[[Start Act 2]]
+	&lt;&lt;/replace&gt;&gt;
+&lt;&lt;/link&gt;&gt;
+
+
+&lt;/div&gt;</tw-passagedata></tw-storydata></div>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
 	if(document.documentElement.getAttribute("data-init")==="loading"){!function(window,document,jQuery,undefined){"use strict";function _classCallCheck(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,r=Array(e.length);t<e.length;t++)r[t]=e[t];return r}return Array.from(e)}var _createClass=function(){function e(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(t,r,n){return r&&e(t.prototype,r),n&&e(t,n),t}}(),_slicedToArray=function(){function e(e,t){var r=[],n=!0,a=!1,i=undefined;try{for(var o,s=e[Symbol.iterator]();!(n=(o=s.next()).done)&&(r.push(o.value),!t||r.length!==t);n=!0);}catch(e){a=!0,i=e}finally{try{!n&&s.return&&s.return()}finally{if(a)throw i}}return r}return function(t,r){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,r);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},Alert=function(){function e(e,t,r,n){var a="fatal"===e,i="Apologies! "+(a?"A fatal":"An")+" error has occurred.";i+=a?" Aborting.":" You may be able to continue, but some parts may not work properly.",null==t&&null==r||(i+="\n\nError",null!=t&&(i+=" ["+t+"]"),i+=null!=r?": "+r.replace(/^(?:(?:uncaught\s+(?:exception:\s+)?)?error:\s+)+/i,"")+".":": unknown error."),"object"===("undefined"==typeof n?"undefined":_typeof(n))&&n.stack&&(i+="\n\nStack Trace:\n"+n.stack),window.alert(i)}function t(t,r,n){e(null,t,r,n)}function r(t,r,n){e("fatal",t,r,n)}return function(e){window.onerror=function(n,a,i,o,s){"complete"===document.readyState?t(null,n,s):(r(null,n,s),window.onerror=e,"function"==typeof window.onerror&&window.onerror.apply(this,arguments))}}(window.onerror),Object.freeze(Object.defineProperties({},{error:{value:t},fatal:{value:r}}))}();!function(){function e(e,t){var a=String(e);switch(t){case"start":return a&&r.test(a)?a.replace(r,""):a;case"end":return a&&n.test(a)?a.replace(n,""):a;default:throw new Error('_trimFrom called with incorrect where parameter value: "'+t+'"')}}function t(e,t){var r=Number.parseInt(e,10)||0;if(r<1)return"";var n="undefined"==typeof t?"":String(t);for(""===n&&(n=" ");n.length<r;){var a=n.length,i=r-a;n+=a>i?n.slice(0,i):n}return n.length>r&&(n=n.slice(0,r)),n}var r=/^[\s\u00A0\uFEFF][\s\u00A0\uFEFF]*/,n=/[\s\u00A0\uFEFF][\s\u00A0\uFEFF]*$/;Array.prototype.includes||Object.defineProperty(Array.prototype,"includes",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includes called on null or undefined");if(0===arguments.length)return!1;var e=this.length>>>0;if(0===e)return!1;var t=arguments[0],r=Number(arguments[1])||0;for(r<0&&(r=Math.max(0,e+r));r<e;++r){var n=this[r];if(t===n||t!==t&&n!==n)return!0}return!1}}),String.prototype.padStart||Object.defineProperty(String.prototype,"padStart",{configurable:!0,writable:!0,value:function(e,r){if(null==this)throw new TypeError("String.prototype.padStart called on null or undefined");var n=String(this),a=n.length,i=Number.parseInt(e,10);return i<=a?n:t(i-a,r)+n}}),String.prototype.padEnd||Object.defineProperty(String.prototype,"padEnd",{configurable:!0,writable:!0,value:function(e,r){if(null==this)throw new TypeError("String.prototype.padEnd called on null or undefined");var n=String(this),a=n.length,i=Number.parseInt(e,10);return i<=a?n:n+t(i-a,r)}}),String.prototype.trimStart||Object.defineProperty(String.prototype,"trimStart",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimStart called on null or undefined");return e(this,"start")}}),String.prototype.trimLeft||Object.defineProperty(String.prototype,"trimLeft",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimLeft called on null or undefined");return e(this,"start")}}),String.prototype.trimEnd||Object.defineProperty(String.prototype,"trimEnd",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimEnd called on null or undefined");return e(this,"end")}}),String.prototype.trimRight||Object.defineProperty(String.prototype,"trimRight",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimRight called on null or undefined");return e(this,"end")}})}(),function(){function _random(){var e=void 0,t=void 0;switch(arguments.length){case 0:throw new Error("_random called with insufficient parameters");case 1:e=0,t=arguments[0];break;default:e=arguments[0],t=arguments[1]}if(e>t){var r=[t,e];e=r[0],t=r[1]}return Math.floor(_nativeMathRandom()*(t-e+1))+e}function _randomIndex(e,t){var r=void 0,n=void 0;switch(t.length){case 1:r=0,n=e-1;break;case 2:r=0,n=Math.trunc(t[1]);break;default:r=Math.trunc(t[1]),n=Math.trunc(t[2])}return Number.isNaN(r)?r=0:!Number.isFinite(r)||r>=e?r=e-1:r<0&&(r=e+r,r<0&&(r=0)),Number.isNaN(n)?n=0:!Number.isFinite(n)||n>=e?n=e-1:n<0&&(n=e+n,n<0&&(n=e-1)),_random(r,n)}function _getCodePointStartAndEnd(e,t){var r=e.charCodeAt(t);if(Number.isNaN(r))return{char:"",start:-1,end:-1};if(r<55296||r>57343)return{char:e.charAt(t),start:t,end:t};if(r>=55296&&r<=56319){var n=t+1;if(n>=e.length)throw new Error("high surrogate without trailing low surrogate");var a=e.charCodeAt(n);if(a<56320||a>57343)throw new Error("high surrogate without trailing low surrogate");return{char:e.charAt(t)+e.charAt(n),start:t,end:n}}if(0===t)throw new Error("low surrogate without leading high surrogate");var i=t-1,o=e.charCodeAt(i);if(o<55296||o>56319)throw new Error("low surrogate without leading high surrogate");return{char:e.charAt(i)+e.charAt(t),start:i,end:t}}var _nativeMathRandom=Math.random;Object.defineProperty(Array,"random",{configurable:!0,writable:!0,value:function(e){if(null==e||"object"!==("undefined"==typeof e?"undefined":_typeof(e))||!Object.prototype.hasOwnProperty.call(e,"length"))throw new TypeError("Array.random array parameter must be an array or array-lke object");var t=e.length>>>0;if(0!==t){var r=0===arguments.length?_random(0,t-1):_randomIndex(t,Array.prototype.slice.call(arguments,1));return e[r]}}}),Object.defineProperty(Array.prototype,"concatUnique",{configurable:!0,writable:!0,value:function e(){if(null==this)throw new TypeError("Array.prototype.concatUnique called on null or undefined");var t=Array.from(this);if(0===arguments.length)return t;var r=Array.prototype.reduce.call(arguments,function(e,t){return e.concat(t)},[]),n=r.length;if(0===n)return t;for(var a=Array.prototype.indexOf,i=Array.prototype.push,o=0;o<n;++o){var e=r[o];a.call(t,e)===-1&&i.call(t,e)}return t}}),Object.defineProperty(Array.prototype,"count",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.count called on null or undefined");for(var e=Array.prototype.indexOf,t=arguments[0],r=Number(arguments[1])||0,n=0;(r=e.call(this,t,r))!==-1;)++n,++r;return n}}),Object.defineProperty(Array.prototype,"delete",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.delete called on null or undefined");if(0===arguments.length)return[];var e=this.length>>>0;if(0===e)return[];for(var t=Array.prototype.indexOf,r=Array.prototype.push,n=Array.prototype.splice,a=Array.prototype.concat.apply([],arguments),i=[],o=0,s=a.length;o<s;++o)for(var u=a[o],l=0;(l=t.call(this,u,l))!==-1;)r.apply(i,n.call(this,l,1));return i}}),Object.defineProperty(Array.prototype,"deleteAt",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.deleteAt called on null or undefined");if(0===arguments.length)return[];var e=this.length>>>0;if(0===e)return[];for(var t=Array.prototype.splice,r=[].concat(_toConsumableArray(new Set(Array.prototype.concat.apply([],arguments).map(function(t){return t<0?Math.max(0,e+t):t})).values())),n=[].concat(_toConsumableArray(r)).sort(function(e,t){return t-e}),a=[],i=0,o=r.length;i<o;++i)a[i]=this[r[i]];for(var s=0,u=n.length;s<u;++s)t.call(this,n[s],1);return a}}),Object.defineProperty(Array.prototype,"flatten",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.flatten called on null or undefined");return Array.prototype.reduce.call(this,function(e,t){return e.concat(Array.isArray(t)?t.flatten():t)},[])}}),Object.defineProperty(Array.prototype,"includesAll",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includesAll called on null or undefined");if(1===arguments.length)return Array.isArray(arguments[0])?Array.prototype.includesAll.apply(this,arguments[0]):Array.prototype.includes.apply(this,arguments);for(var e=0,t=arguments.length;e<t;++e)if(!Array.prototype.some.call(this,function(e){return e===this.val||e!==e&&this.val!==this.val},{val:arguments[e]}))return!1;return!0}}),Object.defineProperty(Array.prototype,"includesAny",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includesAny called on null or undefined");if(1===arguments.length)return Array.isArray(arguments[0])?Array.prototype.includesAny.apply(this,arguments[0]):Array.prototype.includes.apply(this,arguments);for(var e=0,t=arguments.length;e<t;++e)if(Array.prototype.some.call(this,function(e){return e===this.val||e!==e&&this.val!==this.val},{val:arguments[e]}))return!0;return!1}}),Object.defineProperty(Array.prototype,"pluck",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.pluck called on null or undefined");var e=this.length>>>0;if(0!==e){var t=0===arguments.length?_random(0,e-1):_randomIndex(e,[].concat(Array.prototype.slice.call(arguments)));return Array.prototype.splice.call(this,t,1)[0]}}}),Object.defineProperty(Array.prototype,"pluckMany",{configurable:!0,writable:!0,value:function(e){if(null==this)throw new TypeError("Array.prototype.pluckMany called on null or undefined");var t=this.length>>>0;if(0===t)return[];var r=Math.trunc(e);if(!Number.isInteger(r))throw new Error("Array.prototype.pluckMany want parameter must be an integer");if(r<1)return[];r>t&&(r=t);var n=Array.prototype.splice,a=[],i=t-1;do a.push(n.call(this,_random(0,i--),1)[0]);while(a.length<r);return a}}),Object.defineProperty(Array.prototype,"pushUnique",{configurable:!0,writable:!0,value:function e(){if(null==this)throw new TypeError("Array.prototype.pushUnique called on null or undefined");var t=arguments.length;if(0===t)return this.length>>>0;for(var r=Array.prototype.indexOf,n=Array.prototype.push,a=0;a<t;++a){var e=arguments[a];r.call(this,e)===-1&&n.call(this,e)}return this.length>>>0}}),Object.defineProperty(Array.prototype,"random",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.random called on null or undefined");var e=this.length>>>0;if(0!==e){var t=0===arguments.length?_random(0,e-1):_randomIndex(e,[].concat(Array.prototype.slice.call(arguments)));return this[t]}}}),Object.defineProperty(Array.prototype,"randomMany",{configurable:!0,writable:!0,value:function(e){if(null==this)throw new TypeError("Array.prototype.randomMany called on null or undefined");var t=this.length>>>0;if(0===t)return[];var r=Math.trunc(e);if(!Number.isInteger(r))throw new Error("Array.prototype.randomMany want parameter must be an integer");if(r<1)return[];r>t&&(r=t);var n=new Map,a=[],i=t-1;do{var o=void 0;do o=_random(0,i);while(n.has(o));n.set(o,!0),a.push(this[o])}while(a.length<r);return a}}),Object.defineProperty(Array.prototype,"shuffle",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.shuffle called on null or undefined");var e=this.length>>>0;if(0===e)return this;for(var t=e-1;t>0;--t){var r=Math.floor(_nativeMathRandom()*(t+1));if(t!==r){var n=this[t];this[t]=this[r],this[r]=n}}return this}}),Object.defineProperty(Array.prototype,"unshiftUnique",{configurable:!0,writable:!0,value:function e(){if(null==this)throw new TypeError("Array.prototype.unshiftUnique called on null or undefined");var t=arguments.length;if(0===t)return this.length>>>0;for(var r=Array.prototype.indexOf,n=Array.prototype.unshift,a=0;a<t;++a){var e=arguments[a];r.call(this,e)===-1&&n.call(this,e)}return this.length>>>0}}),Object.defineProperty(Function.prototype,"partial",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Function.prototype.partial called on null or undefined");var e=Array.prototype.slice,t=this,r=e.call(arguments,0);return function(){for(var n=[],a=0,i=0;i<r.length;++i)n.push(r[i]===undefined?arguments[a++]:r[i]);return t.apply(this,n.concat(e.call(arguments,a)))}}}),Object.defineProperty(Math,"clamp",{configurable:!0,writable:!0,value:function e(t,r,n){var e=Number(t);return Number.isNaN(e)?NaN:e.clamp(r,n)}}),Object.defineProperty(Math,"easeInOut",{configurable:!0,writable:!0,value:function(e){return 1-(Math.cos(Number(e)*Math.PI)+1)/2}}),Object.defineProperty(Number.prototype,"clamp",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Number.prototype.clamp called on null or undefined");if(2!==arguments.length)throw new Error("Number.prototype.clamp called with an incorrect number of parameters");var e=Number(arguments[0]),t=Number(arguments[1]);if(e>t){var r=[t,e];e=r[0],t=r[1]}return Math.min(Math.max(this,e),t)}}),RegExp.escape||!function(){var e=/[\\^$*+?.()|[\]{}]/g,t=new RegExp(e.source);Object.defineProperty(RegExp,"escape",{configurable:!0,writable:!0,value:function(r){var n=String(r);return n&&t.test(n)?n.replace(e,"\\$&"):n}})}(),function(){var e=/{(\d+)(?:,([+-]?\d+))?}/g,t=new RegExp(e.source);Object.defineProperty(String,"format",{configurable:!0,writable:!0,value:function(r){function n(e,t,r){if(!t)return e;var n=Math.abs(t)-e.length;if(n<1)return e;var a=String(r).repeat(n);return t<0?e+a:a+e}if(arguments.length<2)return 0===arguments.length?"":r;var a=2===arguments.length&&Array.isArray(arguments[1])?[].concat(_toConsumableArray(arguments[1])):Array.prototype.slice.call(arguments,1);return 0===a.length?r:t.test(r)?(e.lastIndex=0,r.replace(e,function(e,t,r){var i=a[t];if(null==i)return"";for(;"function"==typeof i;)i=i();switch("undefined"==typeof i?"undefined":_typeof(i)){case"string":break;case"object":i=JSON.stringify(i);break;default:i=String(i)}return n(i,r?Number.parseInt(r,10):0," ")})):r}})}(),Object.defineProperty(String.prototype,"contains",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.contains called on null or undefined");return String.prototype.indexOf.apply(this,arguments)!==-1}}),Object.defineProperty(String.prototype,"count",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.count called on null or undefined");var e=String(arguments[0]||"");if(""===e)return 0;for(var t=String.prototype.indexOf,r=e.length,n=Number(arguments[1])||0,a=0;(n=t.call(this,e,n))!==-1;)++a,n+=r;return a}}),Object.defineProperty(String.prototype,"splice",{configurable:!0,writable:!0,value:function(e,t,r){if(null==this)throw new TypeError("String.prototype.splice called on null or undefined");var n=this.length>>>0;if(0===n)return"";var a=Number(e);Number.isSafeInteger(a)?a<0&&(a+=n,a<0&&(a=0)):a=0,a>n&&(a=n);var i=Number(t);(!Number.isSafeInteger(i)||i<0)&&(i=0);var o=this.slice(0,a);return"undefined"!=typeof r&&(o+=r),a+i<n&&(o+=this.slice(a+i)),o}}),Object.defineProperty(String.prototype,"splitOrEmpty",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.splitOrEmpty called on null or undefined");return""===String(this)?[]:String.prototype.split.apply(this,arguments)}}),Object.defineProperty(String.prototype,"toLocaleUpperFirst",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.toLocaleUpperFirst called on null or undefined");var e=String(this),t=_getCodePointStartAndEnd(e,0),r=t.char,n=t.end;return n===-1?"":r.toLocaleUpperCase()+e.slice(n+1)}}),Object.defineProperty(String.prototype,"toUpperFirst",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.toUpperFirst called on null or undefined");var e=String(this),t=_getCodePointStartAndEnd(e,0),r=t.char,n=t.end;return n===-1?"":r.toUpperCase()+e.slice(n+1)}}),Object.defineProperty(Date.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:date)",this.toISOString()]}}),Object.defineProperty(Function.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:eval)","("+this.toString()+")"]}}),Object.defineProperty(Map.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:map)",[].concat(_toConsumableArray(this))]}}),Object.defineProperty(RegExp.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:eval)",this.toString()]}}),Object.defineProperty(Set.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:set)",[].concat(_toConsumableArray(this))]}}),Object.defineProperty(JSON,"reviveWrapper",{configurable:!0,writable:!0,value:function(e,t){if("string"!=typeof e)throw new TypeError("JSON.reviveWrapper code parameter must be a string");return["(revive:eval)",[e,t]]}}),Object.defineProperty(JSON,"_real_parse",{value:JSON.parse}),Object.defineProperty(JSON,"parse",{configurable:!0,writable:!0,value:function value(text,reviver){return JSON._real_parse(text,function(key,val){var value=val;if(Array.isArray(value)&&2===value.length)switch(value[0]){case"(revive:set)":value=new Set(value[1]);break;case"(revive:map)":value=new Map(value[1]);break;case"(revive:date)":value=new Date(value[1]);break;case"(revive:eval)":try{if(Array.isArray(value[1])){var $ReviveData$=value[1][1];value=eval(value[1][0])}else value=eval(value[1])}catch(e){}}else if("string"==typeof value&&"@@revive@@"===value.slice(0,10))try{value=eval(value.slice(10))}catch(e){}if("function"==typeof reviver)try{value=reviver(key,value)}catch(e){}return value})}}),Object.defineProperty(Array.prototype,"contains",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.contains called on null or undefined");return Array.prototype.includes.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"containsAll",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.containsAll called on null or undefined");return Array.prototype.includesAll.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"containsAny",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.containsAny called on null or undefined");return Array.prototype.includesAny.apply(this,arguments)}}),Object.defineProperty(String.prototype,"readBracketedList",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.readBracketedList called on null or undefined");for(var e=new RegExp("(?:\\[\\[((?:\\s|\\S)*?)\\]\\])|([^\"'\\s]\\S*)","gm"),t=[],r=void 0;null!==(r=e.exec(this));)r[1]?t.push(r[1]):r[2]&&t.push(r[2]);return t}})}();var Browser=function(){var e=navigator.userAgent.toLowerCase(),t=e.includes("windows phone"),r=Object.freeze({Android:!t&&e.includes("android"),BlackBerry:/blackberry|bb10/.test(e),iOS:!t&&/ip(?:hone|ad|od)/.test(e),Windows:t||e.includes("iemobile"),any:function(){return r.Android||r.BlackBerry||r.iOS||r.Windows}}),n=!r.Windows&&!/khtml|trident|edge/.test(e)&&e.includes("gecko"),a=!e.includes("opera")&&/msie|trident/.test(e),i=a?function(){var t=/(?:msie\s+|rv:)(\d+\.\d)/.exec(e);return t?Number(t[1]):0}():null,o=e.includes("opera")||e.includes(" opr/"),s=o?function(){var t=new RegExp((/khtml|chrome/.test(e)?"opr":"version")+"\\/(\\d+\\.\\d+)"),r=t.exec(e);return r?Number(r[1]):0}():null;return Object.freeze({userAgent:e,isMobile:r,isGecko:n,isIE:a,ieVersion:i,isOpera:o,operaVersion:s})}(),Has=function(){var e=function(){try{return"function"==typeof document.createElement("audio").canPlayType}catch(e){}return!1}(),t=function(){try{return"Blob"in window&&"File"in window&&"FileList"in window&&"FileReader"in window&&!Browser.isMobile.any()&&(!Browser.isOpera||Browser.operaVersion>=15)}catch(e){}return!1}(),r=function(){try{return"geolocation"in navigator&&"function"==typeof navigator.geolocation.getCurrentPosition&&"function"==typeof navigator.geolocation.watchPosition}catch(e){}return!1}(),n=function(){try{return"MutationObserver"in window&&"function"==typeof window.MutationObserver}catch(e){}return!1}(),a=function(){try{return"performance"in window&&"function"==typeof window.performance.now}catch(e){}return!1}();return Object.freeze({audio:e,fileAPI:t,geolocation:r,mutationObserver:n,performance:a})}(),_ref3=function(){function e(t){if("object"!==("undefined"==typeof t?"undefined":_typeof(t))||null==t)return t;if("function"==typeof t.clone)return t.clone(!0);if(t.nodeType&&"function"==typeof t.cloneNode)return t.cloneNode(!0);var r=void 0;return Array.isArray(t)?r=[]:t instanceof Date?r=new Date(t.getTime()):t instanceof Map?(r=new Map,t.forEach(function(t,n){r.set(n,e(t))})):t instanceof RegExp?r=new RegExp(t):t instanceof Set?(r=new Set,t.forEach(function(t){r.add(e(t))})):r=Object.create(Object.getPrototypeOf(t)),Object.keys(t).forEach(function(n){return r[n]=e(t[n])}),r}function t(e){for(var t=document.createDocumentFragment(),r=document.createElement("p"),n=void 0;null!==(n=e.firstChild);){if(n.nodeType===Node.ELEMENT_NODE){var a=n.nodeName.toUpperCase();switch(a){case"BR":if(null!==n.nextSibling&&n.nextSibling.nodeType===Node.ELEMENT_NODE&&"BR"===n.nextSibling.nodeName.toUpperCase()){e.removeChild(n.nextSibling),e.removeChild(n),t.appendChild(r),r=document.createElement("p");continue}if(!r.hasChildNodes()){e.removeChild(n);continue}break;case"ADDRESS":case"ARTICLE":case"ASIDE":case"BLOCKQUOTE":case"CENTER":case"DIV":case"DL":case"FIGURE":case"FOOTER":case"FORM":case"H1":case"H2":case"H3":case"H4":case"H5":case"H6":case"HEADER":case"HR":case"MAIN":case"NAV":case"OL":case"P":case"PRE":case"SECTION":case"TABLE":case"UL":r.hasChildNodes()&&(t.appendChild(r),r=document.createElement("p")),t.appendChild(n);continue}}r.appendChild(n)}r.hasChildNodes()&&t.appendChild(r),e.appendChild(t)}function r(){try{return document.activeElement||null}catch(e){return null}}function n(e,t,r){var n="object"===("undefined"==typeof e?"undefined":_typeof(e))?e:document.getElementById(e);if(null==n)return null;var a=Array.isArray(t)?t:[t];jQuery(n).empty();for(var i=0,o=a.length;i<o;++i)if(Story.has(a[i]))return new Wikifier(n,Story.get(a[i]).processText().trim()),n;if(null!=r){var s=String(r).trim();""!==s&&new Wikifier(n,s)}return n}function a(e,t,r){return jQuery(document.createElement("span")).addClass("error").attr("title",r).text(L10n.get("errorTitle")+": "+(t||"unknown error")).appendTo(e),!1}function i(e,t){var r=i;switch("undefined"==typeof e?"undefined":_typeof(e)){case"number":if(Number.isNaN(e))return t;break;case"object":if(null===e)return t;if(Array.isArray(e))return e.map(function(e){return r(e,t)}).join(", ");if(e instanceof Set)return[].concat(_toConsumableArray(e)).map(function(e){return r(e,t)}).join(", ");if(e instanceof Map){var n=[].concat(_toConsumableArray(e)).map(function(e){return r(e[0],t)+" ⇒ "+r(e[1],t)}).join("; ");return"( "+n+" )"}return e instanceof Date?e.toLocaleString():"function"==typeof e.toString?e.toString():Object.prototype.toString.call(e);case"function":case"undefined":return t}return String(e)}return Object.freeze(Object.defineProperties({},{clone:{value:e},convertBreaks:{value:t},safeActiveElement:{value:r},setPageElement:{value:n},throwError:{value:a},toStringOrDefault:{value:i}}))}(),clone=_ref3.clone,convertBreaks=_ref3.convertBreaks,safeActiveElement=_ref3.safeActiveElement,setPageElement=_ref3.setPageElement,throwError=_ref3.throwError,toStringOrDefault=_ref3.toStringOrDefault;!function(){function e(e){13!==e.which&&32!==e.which||(e.preventDefault(),jQuery(safeActiveElement()||this).trigger("click"))}function t(e){return function(){var t=jQuery(this);t.is("[aria-pressed]")&&t.attr("aria-pressed","true"===t.attr("aria-pressed")?"false":"true"),e.apply(this,arguments)}}function r(e){return t(function(){jQuery(this).off(".aria-clickable").removeAttr("tabindex aria-controls aria-pressed").not("a,button").removeAttr("role").end().filter("button").prop("disabled",!0),e.apply(this,arguments)})}jQuery.fn.extend({ariaClick:function(n,a){if(0===this.length||0===arguments.length)return this;var i=n,o=a;return null==o&&(o=i,i=undefined),i=jQuery.extend({namespace:undefined,one:!1,selector:undefined,data:undefined,controls:undefined,pressed:undefined,label:undefined},i),"string"!=typeof i.namespace?i.namespace="":"."!==i.namespace[0]&&(i.namespace="."+i.namespace),"boolean"==typeof i.pressed&&(i.pressed=i.pressed?"true":"false"),this.filter("button").prop("type","button"),this.not("a,button").attr("role","button"),this.attr("tabindex",0),null!=i.controls&&this.attr("aria-controls",i.controls),null!=i.pressed&&this.attr("aria-pressed",i.pressed),null!=i.label&&this.attr({"aria-label":i.label,title:i.label}),this.not("button").on("keypress.aria-clickable"+i.namespace,i.selector,e),this.on("click.aria-clickable"+i.namespace,i.selector,i.data,i.one?r(o):t(o)),this}})}(),function(){jQuery.extend({wikiWithOptions:function(e){for(var t=arguments.length,r=Array(t>1?t-1:0),n=1;n<t;n++)r[n-1]=arguments[n];if(0!==r.length){var a=document.createDocumentFragment();r.forEach(function(t){return new Wikifier(a,t,e)});var i=[].concat(_toConsumableArray(a.querySelectorAll(".error"))).map(function(e){return e.textContent.replace(/^(?:(?:Uncaught\s+)?Error:\s+)+/,"")});if(i.length>0)throw new Error(i.join("; "))}},wiki:function(){for(var e=arguments.length,t=Array(e),r=0;r<e;r++)t[r]=arguments[r];this.wikiWithOptions.apply(this,[undefined].concat(t))}}),jQuery.fn.extend({wikiWithOptions:function(e){for(var t=arguments.length,r=Array(t>1?t-1:0),n=1;n<t;n++)r[n-1]=arguments[n];if(0===this.length||0===r.length)return this;var a=document.createDocumentFragment();return r.forEach(function(t){return new Wikifier(a,t,e)}),this.append(a),this},wiki:function(){for(var e=arguments.length,t=Array(e),r=0;r<e;r++)t[r]=arguments[r];return this.wikiWithOptions.apply(this,[undefined].concat(t))}})}();var Util=function(){function e(e){return Object.freeze(Object.assign(Object.create(null),e))}function t(e){return Object.prototype.toString.call(e).slice(8,-1)}function r(e){var t=void 0;switch("undefined"==typeof e?"undefined":_typeof(e)){case"number":t=e;break;case"string":t=Number(e);break;default:return!1}return!Number.isNaN(t)&&Number.isFinite(t)}function n(e){return"boolean"==typeof e||"string"==typeof e&&("true"===e||"false"===e)}function a(e){return String(e).trim().replace(/[^\w\s\u2013\u2014-]+/g,"").replace(/[_\s\u2013\u2014-]+/g,"-").toLocaleLowerCase()}function i(e){if(null==e)return"";var t=String(e);return t&&h.test(t)?t.replace(p,function(e){return g[e]}):t}function o(e){if(null==e)return"";var t=String(e);return t&&y.test(t)?t.replace(m,function(e){return v[e.toLowerCase()]}):t}function s(e,t){var r=String(e),n=Math.trunc(t),a=r.charCodeAt(n);if(Number.isNaN(a))return{char:"",start:-1,end:-1};var i={char:r.charAt(n),start:n,end:n};if(a<55296||a>57343)return i;if(a>=55296&&a<=56319){var o=n+1;if(o>=r.length)return i;var s=r.charCodeAt(o);return s<56320||s>57343?i:(i.char=i.char+r.charAt(o),i.end=o,i)}if(0===n)return i;var u=n-1,l=r.charCodeAt(u);return l<55296||l>56319?i:(i.char=r.charAt(u)+i.char,i.start=u,i)}function u(){return(Has.performance?performance:Date).now()}function l(e){var t=/^([+-]?(?:\d*\.)?\d+)([Mm]?[Ss])$/,r=t.exec(String(e));if(null===r)throw new SyntaxError('invalid time value syntax: "'+e+'"');var n=Number(r[1]);if(/^[Ss]$/.test(r[2])&&(n*=1e3),Number.isNaN(n)||!Number.isFinite(n))throw new RangeError('invalid time value: "'+e+'"');return n}function c(e){if("number"!=typeof e||Number.isNaN(e)||!Number.isFinite(e)){var t=void 0;switch("undefined"==typeof e?"undefined":_typeof(e)){case"string":t='"'+e+'"';break;case"number":t=String(e);break;default:t=Object.prototype.toString.call(e)}throw new Error("invalid milliseconds: "+t)}return e+"ms"}function d(e){if(!e.includes("-"))switch(e){case"bgcolor":return"backgroundColor";case"float":return"cssFloat";default:return e}var t="-ms-"===e.slice(0,4)?e.slice(1):e;return t.split("-").map(function(e,t){return 0===t?e:e.toUpperFirst()}).join("")}function f(e){var t=document.createElement("a"),r=Object.create(null);t.href=e,t.search&&t.search.replace(/^\?/,"").splitOrEmpty(/(?:&(?:amp;)?|;)/).forEach(function(e){var t=e.split("="),n=_slicedToArray(t,2),a=n[0],i=n[1];r[a]=i});var n=t.host&&"/"!==t.pathname[0]?"/"+t.pathname:t.pathname;return{href:t.href,protocol:t.protocol,host:t.host,hostname:t.hostname,port:t.port,path:""+n+t.search,pathname:n,query:t.search,search:t.search,queries:r,searches:r,hash:t.hash}}var p=/[&<>"'`]/g,h=new RegExp(p.source),g=Object.freeze({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;","`":"&#96;"}),m=/&(?:amp|#38|#x26|lt|#60|#x3c|gt|#62|#x3e|quot|#34|#x22|apos|#39|#x27|#96|#x60);/gi,y=new RegExp(m.source,"i"),v=Object.freeze({"&amp;":"&","&#38;":"&","&#x26;":"&","&lt;":"<","&#60;":"<","&#x3c;":"<","&gt;":">","&#62;":">","&#x3e;":">","&quot;":'"',"&#34;":'"',"&#x22;":'"',"&apos;":"'","&#39;":"'","&#x27;":"'","&#96;":"`","&#x60;":"`"});return Object.freeze(Object.defineProperties({},{toEnum:{value:e},toStringTag:{value:t},isNumeric:{value:r},isBoolean:{value:n},slugify:{value:a},escape:{value:i},unescape:{value:o},charAndPosAt:{value:s},fromCssTime:{value:l},toCssTime:{value:c},fromCssProperty:{value:d},parseUrl:{value:f},now:{value:u},random:{value:Math.random},entityEncode:{value:i},entityDecode:{value:o},evalExpression:{value:function(){return Scripting.evalJavaScript.apply(Scripting,arguments)}},evalStatements:{value:function(){return Scripting.evalJavaScript.apply(Scripting,arguments)}}}))}(),SimpleAudio=function(){function e(){return g}function t(e){g=!!e,l("mute",g)}function r(){return p}function n(e){p=Math.clamp(e,.2,5),l("rate",p)}function a(){return h}function i(e){h=Math.clamp(e,0,1),l("volume",h)}function o(){l("stop")}function s(e,t){if("function"!=typeof t)throw new Error("callback parameter must be a function");f.set(e,t)}function u(e){f.delete(e)}function l(e,t){f.forEach(function(r){return r(e,t)})}function c(){for(var e=arguments.length,t=Array(e),r=0;r<e;r++)t[r]=arguments[r];return new(Function.prototype.bind.apply(m,[null].concat(t)))}function d(){for(var e=arguments.length,t=Array(e),r=0;r<e;r++)t[r]=arguments[r];return new(Function.prototype.bind.apply(y,[null].concat(t)))}var f=new Map,p=1,h=1,g=!1,m=function(){function e(t){if(_classCallCheck(this,e),Array.isArray(t))this._create(t);else{if(!(t instanceof e))throw new Error("sources parameter must be an array of either URLs or source objects");this._copy(t)}}return _createClass(e,[{key:"_create",value:function(t){if(!Array.isArray(t)||0===t.length)throw new Error("sources parameter must be an array of either URLs or source objects");var r=/^data:\s*audio\/([^;,]+)\s*[;,]/i,n=/\.([^.\/\\]+)$/,a=e.getType,i=[],o=document.createElement("audio");if(t.forEach(function(e){var t=null;switch("undefined"==typeof e?"undefined":_typeof(e)){case"string":var s=void 0;if("data:"===e.slice(0,5)){if(s=r.exec(e),null===s)throw new Error("source data URI missing media type")}else if(s=n.exec(Util.parseUrl(e).pathname),null===s)throw new Error("source URL missing file extension");var u=a(s[1]);null!==u&&(t={src:e,type:u});break;case"object":if(null===e)throw new Error("source object cannot be null");if(!e.hasOwnProperty("src"))throw new Error('source object missing required "src" property');
